@@ -1,0 +1,19 @@
+#  POST http://localhost:8080/api/reservations/guest/5
+#  Content-Type: application/json
+
+# # //Body
+
+#  {
+#      "hasCar": "true",
+#      "document": "56478912",
+#      "phone": "1234575"
+#  }
+
+# GET http://localhost:8080/api/reservations/active
+# GET http://localhost:8080/api/reservations/pending-checkin
+
+//Body
+
+ #PUT http://localhost:8080/api/reservations/check-in/3
+
+ PUT http://localhost:8080/api/reservations/check-out/2
