@@ -63,11 +63,17 @@ Você pode usar uma ferramenta como Postman ou curl para interagir com os endpoi
 Exemplo de endpoints disponíveis:
 
 Cadastrar Hóspede: POST /api/guests
+
 Pesquisar Hóspedes: GET /api/guests/search?name={name}&document={document}&phone={phone}
+
 Criar Reserva: POST /api/reservations/guest/{guestId}
+
 Realizar Check-In: PUT /api/reservations/check-in/{reservationId}
+
 Realizar Check-Out: PUT /api/reservations/check-out/{reservationId}
+
 Pesquisar Hóspedes que ainda não realizaram o check-in: GET /api/reservations/active
+
 Pesquisar Hóspedes que estão hospedados no momento: GET /api/reservations/pending-checkin
 
 5. Desligar o Banco de Dados
