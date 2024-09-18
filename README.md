@@ -53,7 +53,7 @@ docker-compose up
 Isso irá iniciar um contêiner com PostgreSQL e criar o banco de dados conforme especificado no docker-compose.yml.
 
 3. Configuração do Backend (Spring Boot):
-4. 
+
 Após configurar o banco de dados, você pode iniciar a aplicação Spring Boot.
 
 Passos:
