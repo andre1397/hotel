@@ -38,6 +38,7 @@ Como Executar o Projeto
 Clone o repositório para sua máquina local:
 
 git clone https://github.com/andre1397/hotel.git
+
 cd hotel
 
 2. Configuração do Banco de Dados com Docker Compose
@@ -48,9 +49,11 @@ Passos para executar o composer e criar o banco de dados:
 Abra a pasta database-docker e então execute o seguinte comando para subir o contêiner do banco de dados:
 
 docker-compose up
+
 Isso irá iniciar um contêiner com PostgreSQL e criar o banco de dados conforme especificado no docker-compose.yml.
 
-3. Configuração do Backend (Spring Boot)
+3. Configuração do Backend (Spring Boot):
+4. 
 Após configurar o banco de dados, você pode iniciar a aplicação Spring Boot.
 
 Passos:
@@ -64,8 +67,9 @@ mvn spring-boot:run
 
 Isso iniciará a aplicação no endereço http://localhost:8080.
 
-4. Testar os Endpoints
-Você pode usar uma ferramenta como Postman ou curl para interagir com os endpoints da API REST.
+4. Testar os Endpoints:
+   
+Pode ser usada uma ferramenta como Postman ou curl para interagir com os endpoints da API REST.
 
 Exemplos de endpoints disponíveis:
 
