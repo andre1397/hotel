@@ -1,4 +1,4 @@
-package com.hotel.hotel.dto;
+package com.hotel.dto;
 
 public class GuestDTO {
 

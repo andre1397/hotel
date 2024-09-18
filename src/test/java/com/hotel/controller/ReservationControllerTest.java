@@ -1,4 +1,4 @@
-package com.hotel.hotel.controller;
+package com.hotel.controller;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
@@ -16,13 +16,13 @@ import org.mockito.MockitoAnnotations;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
-import com.hotel.hotel.dto.GuestDTO;
-import com.hotel.hotel.dto.ReservationDTO;
-import com.hotel.hotel.model.Reservation;
-import com.hotel.hotel.repository.ReservationRepository;
-import com.hotel.hotel.service.ReservationService;
-import com.hotel.hotel.view.model.CheckOutResponse;
-import com.hotel.hotel.view.model.ReservationResponse;
+import com.hotel.dto.GuestDTO;
+import com.hotel.dto.ReservationDTO;
+import com.hotel.model.Reservation;
+import com.hotel.repository.ReservationRepository;
+import com.hotel.service.ReservationService;
+import com.hotel.view.model.CheckOutResponse;
+import com.hotel.view.model.ReservationResponse;
 
 public class ReservationControllerTest {
 

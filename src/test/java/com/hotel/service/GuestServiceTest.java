@@ -1,4 +1,4 @@
-package com.hotel.hotel.service;
+package com.hotel.service;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -18,9 +18,9 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import com.hotel.hotel.dto.GuestDTO;
-import com.hotel.hotel.model.Guest;
-import com.hotel.hotel.repository.GuestRepository;
+import com.hotel.dto.GuestDTO;
+import com.hotel.model.Guest;
+import com.hotel.repository.GuestRepository;
 
 import jakarta.persistence.EntityNotFoundException;
 

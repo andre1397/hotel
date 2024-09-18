@@ -1,21 +1,30 @@
-package com.hotel.hotel.view.model;
+package com.hotel.model;
 
-public class GuestResponse {
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 
+@Entity
+public class Guest {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    
     private String name;
     private String document;
     private String phone;
 
-    public GuestResponse() {}
+    public Guest() {}
 
-    public GuestResponse(Long id, String name, String document, String phone) {
+    public Guest(Long id, String name, String document, String phone) {
         this.id = id;
         this.name = name;
         this.document = document;
         this.phone = phone;
     }
-
+    
     public Long getId() {
         return id;
     }
@@ -43,7 +52,7 @@ public class GuestResponse {
     public String getPhone() {
         return phone;
     }
-
+    
     public void setPhone(String phone) {
         this.phone = phone;
     }

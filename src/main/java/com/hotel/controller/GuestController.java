@@ -1,4 +1,4 @@
-package com.hotel.hotel.controller;
+package com.hotel.controller;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -13,9 +13,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.hotel.hotel.dto.GuestDTO;
-import com.hotel.hotel.service.GuestService;
-import com.hotel.hotel.view.model.GuestResponse;
+import com.hotel.dto.GuestDTO;
+import com.hotel.service.GuestService;
+import com.hotel.view.model.GuestResponse;
 
 @RestController
 @RequestMapping("/api/guests")

@@ -1,4 +1,4 @@
-package com.hotel.hotel.service;
+package com.hotel.service;
 
 import java.util.List;
 import java.util.Optional;
@@ -7,9 +7,9 @@ import java.util.stream.Collectors;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
-import com.hotel.hotel.dto.GuestDTO;
-import com.hotel.hotel.model.Guest;
-import com.hotel.hotel.repository.GuestRepository;
+import com.hotel.dto.GuestDTO;
+import com.hotel.model.Guest;
+import com.hotel.repository.GuestRepository;
 
 import jakarta.persistence.EntityExistsException;
 import jakarta.persistence.EntityNotFoundException;

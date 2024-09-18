@@ -1,28 +1,17 @@
-package com.hotel.hotel.model;
+package com.hotel.view.model;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
 
 import org.modelmapper.ModelMapper;
 
-import com.hotel.hotel.dto.GuestDTO;
+import com.hotel.dto.GuestDTO;
+import com.hotel.model.Guest;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
+public class ReservationResponse {
 
-@Entity
-public class Reservation {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
-    @ManyToOne
     private Guest guest;
-
     private LocalDate checkInDate;
     private LocalTime checkInTime;
     private LocalDate checkOutDate;
@@ -30,7 +19,7 @@ public class Reservation {
     private boolean hasCar;
     private boolean checkedIn;
     private boolean checkedOut;
-    private Double totalValue = 0.0;
+    private Double totalValue;
 
     public Long getId() {
         return id;
@@ -55,6 +44,22 @@ public class Reservation {
 
     public void setCheckInDate(LocalDate checkInDate) {
         this.checkInDate = checkInDate;
+    }
+
+    public LocalTime getCheckInTime() {
+        return checkInTime;
+    }
+
+    public void setCheckInTime(LocalTime checkInTime) {
+        this.checkInTime = checkInTime;
+    }
+
+    public LocalTime getCheckOutTime() {
+        return checkOutTime;
+    }
+
+    public void setCheckOutTime(LocalTime checkOutTime) {
+        this.checkOutTime = checkOutTime;
     }
 
     public LocalDate getCheckOutDate() {
@@ -91,26 +96,10 @@ public class Reservation {
 
     public Double getTotalValue() {
         return totalValue;
-    }
+    }  
 
     public void setTotalValue(Double totalValue) {
         this.totalValue = totalValue;
-    }
-
-    public LocalTime getCheckInTime() {
-        return checkInTime;
-    }
-
-    public void setCheckInTime(LocalTime checkInTime) {
-        this.checkInTime = checkInTime;
-    }
-
-    public LocalTime getCheckOutTime() {
-        return checkOutTime;
-    }
-
-    public void setCheckOutTime(LocalTime checkOutTime) {
-        this.checkOutTime = checkOutTime;
     }
 
 }

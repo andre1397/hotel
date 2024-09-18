@@ -1,4 +1,4 @@
-package com.hotel.hotel.controller;
+package com.hotel.controller;
 
 import java.util.List;
 
@@ -13,12 +13,12 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.hotel.hotel.dto.GuestDTO;
-import com.hotel.hotel.dto.ReservationDTO;
-import com.hotel.hotel.service.ReservationService;
-import com.hotel.hotel.view.model.ActiveInactiveGuestsResponse;
-import com.hotel.hotel.view.model.CheckOutResponse;
-import com.hotel.hotel.view.model.ReservationResponse;
+import com.hotel.dto.GuestDTO;
+import com.hotel.dto.ReservationDTO;
+import com.hotel.service.ReservationService;
+import com.hotel.view.model.ActiveInactiveGuestsResponse;
+import com.hotel.view.model.CheckOutResponse;
+import com.hotel.view.model.ReservationResponse;
 
 @RestController
 @RequestMapping("/api/reservations")

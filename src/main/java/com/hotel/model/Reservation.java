@@ -1,16 +1,28 @@
-package com.hotel.hotel.dto;
+package com.hotel.model;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
 
 import org.modelmapper.ModelMapper;
 
-import com.hotel.hotel.model.Guest;
+import com.hotel.dto.GuestDTO;
 
-public class ReservationDTO {
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
 
+@Entity
+public class Reservation {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @ManyToOne
     private Guest guest;
+
     private LocalDate checkInDate;
     private LocalTime checkInTime;
     private LocalDate checkOutDate;
@@ -79,7 +91,7 @@ public class ReservationDTO {
 
     public Double getTotalValue() {
         return totalValue;
-    }  
+    }
 
     public void setTotalValue(Double totalValue) {
         this.totalValue = totalValue;

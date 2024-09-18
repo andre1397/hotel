@@ -1,10 +1,10 @@
-package com.hotel.hotel.view.model;
+package com.hotel.view.model;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.List;
 
-import com.hotel.hotel.dto.GuestDTO;
+import com.hotel.dto.GuestDTO;
 
 public class CheckOutResponse {
 

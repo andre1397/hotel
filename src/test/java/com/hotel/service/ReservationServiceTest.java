@@ -1,4 +1,4 @@
-package com.hotel.hotel.service;
+package com.hotel.service;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
@@ -19,11 +19,11 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.modelmapper.ModelMapper;
 
-import com.hotel.hotel.dto.GuestDTO;
-import com.hotel.hotel.dto.ReservationDTO;
-import com.hotel.hotel.model.Reservation;
-import com.hotel.hotel.repository.ReservationRepository;
-import com.hotel.hotel.view.model.CheckOutResponse;
+import com.hotel.dto.GuestDTO;
+import com.hotel.dto.ReservationDTO;
+import com.hotel.model.Reservation;
+import com.hotel.repository.ReservationRepository;
+import com.hotel.view.model.CheckOutResponse;
 
 public class ReservationServiceTest {
 
@@ -45,16 +45,6 @@ public class ReservationServiceTest {
     @BeforeEach
     void setUp() {
         MockitoAnnotations.openMocks(this);
-    }
-
-    @Test
-    void testCalculateLateCheckOutFee() {
-
-    }
-
-    @Test
-    void testCalculateTotalStayCost() {
-
     }
 
     @Test

@@ -1,4 +1,4 @@
-package com.hotel.hotel.service;
+package com.hotel.service;
 
 import java.time.DayOfWeek;
 import java.time.LocalDate;
@@ -13,11 +13,11 @@ import java.util.stream.Collectors;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
-import com.hotel.hotel.dto.GuestDTO;
-import com.hotel.hotel.dto.ReservationDTO;
-import com.hotel.hotel.model.Reservation;
-import com.hotel.hotel.repository.ReservationRepository;
-import com.hotel.hotel.view.model.CheckOutResponse;
+import com.hotel.dto.GuestDTO;
+import com.hotel.dto.ReservationDTO;
+import com.hotel.model.Reservation;
+import com.hotel.repository.ReservationRepository;
+import com.hotel.view.model.CheckOutResponse;
 
 import jakarta.persistence.EntityNotFoundException;
 
@@ -43,6 +43,10 @@ public class ReservationService {
     public ReservationDTO checkIn(Long reservationId) {
         Reservation reservation = reservationRepository.findById(reservationId)
             .orElseThrow(() -> new EntityNotFoundException("Reserva não encontrada!"));
+
+        if (reservation.isCheckedIn()) {
+            throw new IllegalArgumentException("Hóspede já fez check-in!");
+        }
 
         LocalTime checkTime = LocalTime.now();
 

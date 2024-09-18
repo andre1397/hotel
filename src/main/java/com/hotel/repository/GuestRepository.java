@@ -1,11 +1,11 @@
-package com.hotel.hotel.repository;
+package com.hotel.repository;
 
 import java.util.List;
 import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.hotel.hotel.model.Guest;
+import com.hotel.model.Guest;
 
 public interface GuestRepository extends JpaRepository<Guest, Long> {
 

@@ -1,14 +1,13 @@
-package com.hotel.hotel.view.model;
+package com.hotel.dto;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
 
 import org.modelmapper.ModelMapper;
 
-import com.hotel.hotel.dto.GuestDTO;
-import com.hotel.hotel.model.Guest;
+import com.hotel.model.Guest;
 
-public class ReservationResponse {
+public class ReservationDTO {
 
     private Long id;
     private Guest guest;
@@ -19,7 +18,7 @@ public class ReservationResponse {
     private boolean hasCar;
     private boolean checkedIn;
     private boolean checkedOut;
-    private Double totalValue;
+    private Double totalValue = 0.0;
 
     public Long getId() {
         return id;
@@ -44,22 +43,6 @@ public class ReservationResponse {
 
     public void setCheckInDate(LocalDate checkInDate) {
         this.checkInDate = checkInDate;
-    }
-
-    public LocalTime getCheckInTime() {
-        return checkInTime;
-    }
-
-    public void setCheckInTime(LocalTime checkInTime) {
-        this.checkInTime = checkInTime;
-    }
-
-    public LocalTime getCheckOutTime() {
-        return checkOutTime;
-    }
-
-    public void setCheckOutTime(LocalTime checkOutTime) {
-        this.checkOutTime = checkOutTime;
     }
 
     public LocalDate getCheckOutDate() {
@@ -100,6 +83,22 @@ public class ReservationResponse {
 
     public void setTotalValue(Double totalValue) {
         this.totalValue = totalValue;
+    }
+
+    public LocalTime getCheckInTime() {
+        return checkInTime;
+    }
+
+    public void setCheckInTime(LocalTime checkInTime) {
+        this.checkInTime = checkInTime;
+    }
+
+    public LocalTime getCheckOutTime() {
+        return checkOutTime;
+    }
+
+    public void setCheckOutTime(LocalTime checkOutTime) {
+        this.checkOutTime = checkOutTime;
     }
 
 }
