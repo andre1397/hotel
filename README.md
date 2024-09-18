@@ -4,19 +4,23 @@ Visão Geral do Projeto
 Este projeto é um sistema de gestão de hóspedes para um hotel, permitindo a gestão de reservas, check-ins e check-outs. Ele fornece uma API REST para a manipulação de dados de hóspedes e reservas e utiliza o PostgreSQL como banco de dados.
 
 Funcionalidades Principais:
-Armazenamento persistente de informações de hóspedes (Nome, Documento, Telefone)
-Gerenciamento de reservas
-Capacidade de pesquisar hóspedes por nome, documento ou telefone
-Capacidade de identificar hóspedes atualmente hospedados no hotel
-Suporte para realizar check-ins e check-outs
-Regras de negócio para precificação com base em dias da semana e finais de semana
-Cobrança adicional por vagas de estacionamento e check-outs tardios
-Tecnologias Utilizadas
-Backend: Java 11+, Spring Boot, PostgreSQL
-Banco de Dados: PostgreSQL (via Docker Compose)
-API REST: Spring Boot
-Containerização: Docker e Docker Compose
-Pré-requisitos
+
+Armazenamento persistente de informações de hóspedes (Nome, Documento, Telefone);
+Gerenciamento de reservas;
+Capacidade de pesquisar hóspedes por nome, documento ou telefone;
+Capacidade de identificar hóspedes atualmente hospedados no hotel;
+Suporte para realizar check-ins e check-outs;
+Regras de negócio para precificação com base em dias da semana e finais de semana;
+Cobrança adicional por vagas de estacionamento e check-outs tardios;
+
+Tecnologias Utilizadas:
+
+Backend: Java 11+, Spring Boot, PostgreSQL;
+Banco de Dados: PostgreSQL (via Docker Compose);
+API REST: Spring Boot;
+Containerização: Docker e Docker Compose;
+Pré-requisitos;
+
 Antes de rodar o projeto, certifique-se de que você tenha os seguintes softwares instalados:
 
 Docker
