@@ -43,7 +43,8 @@ cd hotel
 2. Configuração do Banco de Dados com Docker Compose
 Este projeto utiliza o PostgreSQL em um contêiner Docker. O arquivo docker-compose.yml contido na pasta database-docker já está configurado para criar o banco de dados necessário.
 
-Passos:
+Passos para executar o composer e criar o banco de dados:
+
 Abra a pasta database-docker e então execute o seguinte comando para subir o contêiner do banco de dados:
 
 docker-compose up
@@ -66,7 +67,7 @@ Isso iniciará a aplicação no endereço http://localhost:8080.
 4. Testar os Endpoints
 Você pode usar uma ferramenta como Postman ou curl para interagir com os endpoints da API REST.
 
-Exemplo de endpoints disponíveis:
+Exemplos de endpoints disponíveis:
 
 Cadastrar Hóspede: POST /api/guests
 
@@ -82,7 +83,8 @@ Pesquisar Hóspedes que ainda não realizaram o check-in: GET /api/reservations/
 
 Pesquisar Hóspedes que estão hospedados no momento: GET /api/reservations/pending-checkin
 
-5. Desligar o Banco de Dados
+5. Desligar o Banco de Dados:
+
 Após terminar de utilizar a aplicação, você pode parar o contêiner do banco de dados abrindo novamente a pasta database-docker no terminal e executando:
 
 docker-compose down
